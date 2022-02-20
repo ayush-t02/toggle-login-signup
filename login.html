@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-google fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+            </div>
+
+            <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form class="input-group" id="register">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+        <div class="animation">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_hy4txm7l.json" background="transparent" speed="1" style="width: 650px; height: 650px;" loop autoplay class="anime"></lottie-player>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-24rem";
+            y.style.left = "3rem";
+            z.style.left = "6.6rem";
+
+        }
+
+        function login() {
+            x.style.left = "3rem";
+            y.style.left = "27rem";
+            z.style.left = "0rem";
+        }
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>

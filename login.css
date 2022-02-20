@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    /* background-image: url(https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-size: cover; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.form-box {
+    width: 23rem;
+    height: 30rem;
+    position: relative;
+    background: white;
+    padding: 0.3rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.button-box {
+    width: 14.1rem;
+    margin: 2.5rem auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 7.43rem;
+    height: 100%;
+    background: #15aae5;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.toggle-btn {
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+.social-icons {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.social-icons>a {
+    margin: 0 1.5rem;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.input-group {
+    top: 12rem;
+    position: absolute;
+    width: 17rem;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.6rem 0;
+    margin: 0.3rem 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.6rem 1.8rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #15aae5;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.checkbox {
+    margin: 1.8rem 0.6rem 1.8rem 0;
+}
+
+span {
+    color: #777;
+    font-size: 0.72rem;
+    bottom: 4.08rem;
+    position: absolute;
+}
+
+#login {
+    left: 3rem;
+}
+
+#register {
+    left: 27rem;
+}
+
+
+/* Media frames */
+
+@media (max-width: 800px) {
+    .anime {
+        display: none;
+    }
+    .hero {
+        gap: 0;
+    }
+}
